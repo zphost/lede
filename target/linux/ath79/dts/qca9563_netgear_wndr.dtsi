@@ -6,10 +6,6 @@
 #include "qca956x.dtsi"
 
 / {
-	chosen {
-		bootargs = "console=ttyS0,115200n8";
-	};
-
 	aliases {
 		led-boot = &led_power_amber;
 		led-failsafe = &led_power_amber;
@@ -100,7 +96,6 @@
 	status = "okay";
 
 	num-cs = <2>;
-	cs-gpios = <0>, <0>;
 
 	flash@0 {
 		compatible = "jedec,spi-nor";
